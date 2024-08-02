@@ -1,0 +1,14 @@
+[package]
+name = "autodidact_sqlx"
+version = "0.1.0"
+authors = []
+edition = "2021"
+
+[dependencies]
+futures = "*"
+json = "*"
+serde_json = "*"
+serde = { version = "*", features = ["derive"] }
+async-std = { version = "*", features = ["attributes"]}
+tokio = { version = "*", features = ["full"] }
+sqlx = { version = "*", features = [ "runtime-async-std", "tls-rustls", "postgres", "derive", "macros", "uuid", "bigdecimal", "json" ] }
